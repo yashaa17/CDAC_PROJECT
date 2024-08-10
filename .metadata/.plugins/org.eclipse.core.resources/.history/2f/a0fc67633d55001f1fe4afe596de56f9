@@ -1,0 +1,5 @@
+package com.bookmydriver.repository;
+
+public interface PaymentRepository {
+
+}

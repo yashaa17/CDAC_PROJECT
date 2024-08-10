@@ -1,0 +1,5 @@
+package com.bookmydriver.dto;
+
+public class PaymentDTO {
+
+}

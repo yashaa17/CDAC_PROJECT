@@ -1,0 +1,26 @@
+package com.bookmydriver.entity;
+
+import javax.persistence.*;
+import java.util.List;
+
+@Entity
+public class User {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long userId;
+
+    private String emailId;
+    private String phoneNo;
+    private String passwordHash;
+    private String userName;
+
+    @OneToMany(mappedBy = "user")
+    private List<Booking> bookings;
+
+    @OneToMany(mappedBy = "user")
+    private List<Review> reviews;
+
+    // Getters and Setters
+}
+

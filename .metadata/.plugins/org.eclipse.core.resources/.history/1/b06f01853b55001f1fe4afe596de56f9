@@ -1,0 +1,5 @@
+package com.bookmydriver.service;
+
+public interface UserService {
+
+}

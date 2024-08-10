@@ -1,0 +1,11 @@
+package com.bookmydriver.dto;
+
+public class PaymentDTO {
+    private Long paymentId;
+    private Long bookingId;
+    private Double amount;
+    private String paymentMethod;
+    private String paymentStatus;
+
+    // Getters and Setters
+}

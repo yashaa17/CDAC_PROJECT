@@ -1,0 +1,11 @@
+package com.bookmydriver.dto;
+
+public class DriverDTO {
+    private Long driverId;
+    private String email;
+    private String phoneNo;
+    private String driverName;
+    private Double rating;
+
+    // Getters and Setters
+}
