@@ -1,0 +1,78 @@
+/* Review.css */
+
+.review-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: 50px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #dc3545;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .review-container h3 {
+    color: #dc3545;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 22px;
+  }
+  
+  .review-container label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .review-container input[type="text"],
+  .review-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #dc3545;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #f8f9fa;
+  }
+  
+  .review-container textarea {
+    height: 100px;
+    resize: vertical;
+  }
+  
+  .review-container button {
+    display: block;
+    width: 100%;
+    background-color: #dc3545;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  
+  .review-container button:hover {
+    background-color: #c82333;
+  }
+  
+  @media (max-width: 576px) {
+    .review-container {
+      padding: 15px;
+    }
+  
+    .review-container h3 {
+      font-size: 20px;
+    }
+  
+    .review-container label {
+      font-size: 14px;
+    }
+  
+    .review-container button {
+      font-size: 16px;
+    }
+  }
+  

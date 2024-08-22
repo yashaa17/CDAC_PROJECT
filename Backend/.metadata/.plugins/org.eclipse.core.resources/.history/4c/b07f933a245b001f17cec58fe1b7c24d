@@ -1,0 +1,8 @@
+package com.bookmydriver.config;
+
+public class JwtConstants {
+	public static final String secretKey = "";
+	public static final long expiryTime=0;
+	
+	
+}

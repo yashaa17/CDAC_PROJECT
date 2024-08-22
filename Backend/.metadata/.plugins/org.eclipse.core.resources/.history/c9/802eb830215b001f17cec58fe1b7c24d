@@ -1,0 +1,14 @@
+package com.bookmydriver.config;
+
+import java.security.Key;
+
+import io.jsonwebtoken.io.Decoders;
+import io.jsonwebtoken.security.Keys;
+
+public class JwtService {
+	
+	private Key getSignInKey() {
+		byte[] byteArr = Decoders.BASE64.decode(JwtConstants.secretKey);
+		return Keys.hmacShaKeyFor(byteArr);
+	}
+}

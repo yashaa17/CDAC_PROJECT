@@ -1,0 +1,10 @@
+package com.bookmydriver.entity;
+
+public class DriverBooked {
+	private long id;
+	private long driverId;
+	private long userId;
+//	If active then true ,not active then false
+	private boolean status;
+	
+}

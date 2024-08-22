@@ -1,0 +1,33 @@
+package com.bookmydriver.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.bookmydriver.dao.LoginDao;
+import com.bookmydriver.dto.UserDTO;
+import com.bookmydriver.service.impl.UserServiceImpl;
+
+
+@RequestMapping("/auth")
+@RestController
+public class LoginController {
+	@Autowired
+	private UserServiceImpl serviceImpl;
+
+	@PostMapping("/login")
+	public ResponseEntity login(@RequestBody LoginDao dao) {
+		System.out.println(dao.getEmail()+" "+ dao.getPassword());
+		UserDTO userDTO = serviceImpl.getUserByEmail(dao.getEmail(), dao.getPassword());
+
+		return ResponseEntity.ok(userDTO);
+
+	}
+	 @PostMapping("/create")
+	    public UserDTO createUser(@RequestBody UserDTO userDTO) {
+	        return userService.createUser(userDTO);
+	    }
+}

@@ -1,0 +1,15 @@
+package com.bookmydriver.controller;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.bookmydriver.dao.LoginDao;
+
+import io.swagger.v3.oas.annotations.parameters.RequestBody;
+
+@RequestMapping("/auth/")
+public class LoginController {
+	public ResponseEntity login(@RequestBody LoginDao dao) {
+		dao.
+	}
+}
