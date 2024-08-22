@@ -1,5 +1,0 @@
-package com.bookmydriver.service;
-
-public interface PaymentService {
-
-}
